@@ -3,6 +3,11 @@ Authors
 * Gleb Khegai
 * Anastasia Yudina
 * Danil Stupichev
+
+## Introduction
+There are many tools for analyzing WES (whole exome sequencing) data that can detect germline and somatic mutations, copy number changes, and other events in tumor and normal tissue samples. However, it is important not only to find the event, but also to understand whether it is true. For these purposes, there is a procedure for the validation of a clinical test. As part of it, several technical and biological replicas of a test set of samples are usually produced to check the sequencer and pipeline for accuracy, sensitivity, completeness and reproducibility. When using test cell lines for validation, information about genomic events is usually obtained from previous studies collected in databases (COSMIC), or established during pre-validation experiments.
+
+However, existing validation approaches on cell lines do not cover all requests for assessing the accuracy/sensitivity of genetic testing. For example, in cell lines, genetic events are not always evenly distributed. Therefore, when validating a certain set of genes, extrapolation of quality metrics to the entire exome may be incorrect. On the other hand, when validating on real tumor tissues with a heterogeneous cellular composition, the concept of a “true” event is blurred, since it directly depends on the quality of our pipeline. This is the reason we decided to explore the use of in silico methods to fine-tune and validate a pipeline for identifying somatic mutations in WES samples.
 ## Aim
 Explore the use of in silico methods to fine-tune and validate a pipeline for identifying of somatic mutations in Whole Exome Sequencing samples
 ## Objectives
@@ -66,6 +71,8 @@ The details about all data used in this project is *commencial_secret*. Some det
 ![](images/recall.png)
 
 ![](images/precision_corrected.png)
+
+More details could be found in [detailed presentation](https://docs.google.com/presentation/d/1dNnKSAN0jQM4Ujiv-OcsupxeEnzkb_OIbkfU7bpEycI/edit#slide=id.p6)
 ## Conclusions
 * Internal filters perform much better across the range of purity available, compared to basic filtrations
 * The current filter works much better at high purity, while the new filter copes well with low purity samples
