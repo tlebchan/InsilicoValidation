@@ -77,6 +77,11 @@ More details could be found in [detailed presentation](https://docs.google.com/p
 * Internal filters perform much better across the range of purity available, compared to basic filtrations
 * The current filter works much better at high purity, while the new filter copes well with low purity samples
 * While both filters do well in calling precision, the new filter has a much better performance in terms of recall especially in the low purity range
+
+## Data and code availability
+All the used data (including .bam files, .maf files, reference .fasta files) is a *commercial secret*. Some of the code for graphics plotting, bamsurgeon usage could be foud in notebooks, excepth for mutation calling pipeline, current and new filters as they are *commercial secret*. Nevertheless, as soon as they will be published, the article link will be attached.
+
+![PLACEHOLDER FOR ARTICLE LINK](https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley)
 ## References
 * Duncavage EJ, Coleman JF, Baca ME de, et al. Recommendations for the Use of in Silico Approaches for Next-Generation Sequencing Bioinformatic Pipeline Validation: A Joint Report of the Association for Molecular Pathology, Association for Pathology Informatics, and College of American Pathologists. J Mol Diagn. 2023;25(1):3-16. doi:10.1016/j.jmoldx.2022.09.007
 * Oh E, Choi YL, Kwon MJ, et al. Comparison of Accuracy of Whole-Exome Sequencing with Formalin-Fixed Paraffin-Embedded and Fresh Frozen Tissue Samples. PLOS ONE. 2015;10(12):e0144162. doi:10.1371/journal.pone.0144162
