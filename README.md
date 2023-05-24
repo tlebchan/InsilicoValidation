@@ -54,7 +54,7 @@ python3 -O bamsurgeon/bin/addindel.py -p 10 -v docker_data/config/indel_{1/2}_{p
 samtools fastq -1 file_{1/2}_1.fastq -2 file_{1/2}_2.fastq output_{1/2}_2.bam
 ```
 
-The details about all data used in this project is *commencial_secret*. Some details about generation of files from `mutations` folder can be found in `notebooks/1_regions.ipynb`.
+The details about all data used in this project is *commencial_secret*. Some details about generation of files from `mutations` folder can be found in `notebooks/1_region_search.ipynb`.
 
 ## Results
 
