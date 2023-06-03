@@ -15,7 +15,24 @@ Explore the use of in silico methods to fine-tune and validate a pipeline for id
 * Compare reproducibility of mutation filtration approaches on artificially diluted samples
 * Introduce mutations in real samples and compare performance of different mutation approaches
 ## Methods
-In order to evaluate mutation calling pipeline performance two artificial approaches were utilised:
+
+In order to evaluate mutation calling pipeline performance two artificial approaches were utilised.
+
+### Installation requirements
+
+1. First of all you should install python3.8 packages in order to successfully use notebooks for analysis:
+```
+pip install -r requirements.txt
+```
+
+2. Samtools v1.7 should be installed in your system as well.
+3. Bamsurgeon v1.4.1 was used in this project though the docker.
+```
+git clone https://github.com/adamewing/bamsurgeon.git
+cd bamsurgeon
+docker image build -t bamsurgeon:1.4.1 .
+docker run -it --rm -v /folder/path/to/mount:/docker_data bamsurgeon:1.4.1
+```
 
 ### Artificial dilution
 
