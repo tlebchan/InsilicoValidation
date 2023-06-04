@@ -75,15 +75,15 @@ The details about all data used in this project is *commencial_secret*. Some det
 
 ## Results
 
-1. Somatic mutation VAF for patients with downsampled purity
+1. The test performance was assessed with reproducibility of previously found mutations in clinical samples. Thus, mutations that passed the filter in the original sample were considered as a set of true positive mutations and were used as a reference. In turn, the filtered mutations in the diluted samples were intersected with the reference set to obtain true positives and calculate reproducibility. Illustrative plot with somatic mutation VAF for patients with downsampled purity can be found in the figure.
 
 ![](images/VAF.png)
 
-2. Reproducibility against purity for several mutation filter approaches
+2.  Reproducibility against purity for several mutation filter approaches is shown in the figure. The results show our filters used in the validated pipeline perform much better across the range of purity available, compared to basic filtrations. There are also advantages of each filter: the current filter (black color) works much better at high purity, while the new filter (grey color) performs well for  low purity samples.
 
 ![](images/reproducability.png)
 
-3. Recall and precision on in silico generated data
+3. In the second part of this work, the introduction of artificial mutations in normal samples was utilized. Since mutations were introduced, it is known which mutations should be detected and which are just calling errors or FFPE errors. The results of comparing the current and newly developed filters were evaluated in terms of recall and precision. While both filters do well in calling precision, the new filter has a much better performance in terms of recall especially in the low purity range.
 
 ![](images/recall.png)
 
