@@ -43,7 +43,9 @@ Artificial dilution pipeline consists of several steps:
 ```
 zcat tumor.fastq.gz | wc -l
 ```
-2. Calculate the proportion of reads required to obtain desired purity.
+Details about futher steps can not be provided as they are protected *by NDA*. Below provided common description of the following steps.
+
+2. Calculate the proportion of reads required to obtain desired purity. You can use the following equation to obtain required fraction of tumor reads in order to make a sample with $purity_{new}$
     
 $fraction = \frac{purity_{new} \cdot (1 - purity + 0.5 \cdot ploidy \cdot purity)}{purity \cdot (1 - purity_{new} + 0.5 \cdot ploidy \cdot purity_{new})}$
 
@@ -51,8 +53,6 @@ $fraction = \frac{purity_{new} \cdot (1 - purity + 0.5 \cdot ploidy \cdot purity
 4. Merge corresponding files to obtain artificially diluted .fastq file
 5. Repeat the same to obtain artificially diluted samples with purity 10, 20, 30, 50 and 75 (if it is possible).
 6. Mutation calling was performed with Strelka V2.9.10. 
-
-The details of this pipeline about downsample, merge and mutation calling are *commercial secret*. 
 
 ### **Mutation introduction**
 
@@ -96,7 +96,7 @@ More details could be found in [detailed presentation](https://docs.google.com/p
 * While both filters do well in calling precision, the new filter has a much better performance in terms of recall especially in the low purity range
 
 ## Data and code availability
-All the used data (including .bam files, .maf files, reference .fasta files) is a *commercial secret*. Some of the code for graphics plotting, bamsurgeon usage could be foud in notebooks, excepth for mutation calling pipeline, current and new filters as they are *commercial secret*. Nevertheless, as soon as they will be published, the article link will be attached.
+All the used data (including .bam files, .maf files, reference .fasta files) are protected *by NDA*. Some of the code for graphics plotting, bamsurgeon usage could be foud in notebooks, excepth for mutation calling pipeline, current and new filters as they are protected *by NDA*. Nevertheless, as soon as they will be published, the article link will be attached.
 
 ![PLACEHOLDER FOR ARTICLE LINK](https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley)
 ## References
